@@ -1,0 +1,119 @@
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~
+$ dir
+AppData
+Application\ Data
+Contacts
+Cookies
+Desktop
+Documents
+Downloads
+Favorites
+Links
+Local\ Settings
+Music
+My\ Documents
+NetHood
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{df8b6645-fd73-11e6-8fa6-bb863527e0cf}.TM.blf
+NTUSER.DAT{df8b6645-fd73-11e6-8fa6-bb863527e0cf}.TMContainer00000000000000000001                                                                                                                                                 .regtrans-ms
+NTUSER.DAT{df8b6645-fd73-11e6-8fa6-bb863527e0cf}.TMContainer00000000000000000002                                                                                                                                                 .regtrans-ms
+ntuser.ini
+OneDrive
+Pictures
+PrintHood
+Recent
+Saved\ Games
+Searches
+SendTo
+Start\ Menu
+Templates
+Videos
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~
+$ mkdir learngit2
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~
+$ cd learngit2
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2
+$ pwd
+/c/Users/desarrolloweb/learngit2
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2
+$ git init
+Initialized empty Git repository in C:/Users/desarrolloweb/learngit2/.git/
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ ll
+total 0
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ ls -la
+total 12
+drwxr-xr-x 1 desarrolloweb 197121 0 Jun  9 18:40 ./
+drwxr-xr-x 1 desarrolloweb 197121 0 Jun  9 18:35 ../
+drwxr-xr-x 1 desarrolloweb 197121 0 Jun  9 18:40 .git/
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ ll
+total 0
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ ll
+total 1
+-rw-r--r-- 1 desarrolloweb 197121 9 Jun  9 18:53 ejemplo_1.txt
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ejemplo_1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git add ejemplo_1.txt
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git commit -m "Initial commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'desarrolloweb@AZMEXCURSOS08.(none)')
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git config --global user.email "you@example.com"
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$  git config --local user.name "MORA"
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git config --local user.email "francisco.mora@allianz.com.mx"
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 198ff9a] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ejemplo_1.txt
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$
