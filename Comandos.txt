@@ -1,3 +1,4 @@
+
 desarrolloweb@AZMEXCURSOS08 MINGW64 ~
 $ dir
 AppData
@@ -114,6 +115,121 @@ $ git commit -m "Initial commit"
 [master (root-commit) 198ff9a] Initial commit
  1 file changed, 1 insertion(+)
  create mode 100644 ejemplo_1.txt
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git log
+commit 198ff9ac2a7429089db5d341c6e4fad7a50801bb (HEAD -> master)
+Author: MORA <francisco.mora@allianz.com.mx>
+Date:   Fri Jun 9 19:17:36 2017 +0000
+
+    Initial commit
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ mk subdir1
+bash: mk: command not found
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ mkdir subdir1
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ ll
+total 6
+-rw-r--r-- 1 desarrolloweb 197121 3326 Jun  9 19:19 Comandos.txt
+-rw-r--r-- 1 desarrolloweb 197121    9 Jun  9 18:53 ejemplo_1.txt
+-rw-r--r-- 1 desarrolloweb 197121    9 Jun  9 19:23 ejemplo_2.txt
+drwxr-xr-x 1 desarrolloweb 197121    0 Jun  9 19:25 subdir1/
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ rm ejemplo_1.txt
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git log
+commit 198ff9ac2a7429089db5d341c6e4fad7a50801bb (HEAD -> master)
+Author: MORA <francisco.mora@allianz.com.mx>
+Date:   Fri Jun 9 19:17:36 2017 +0000
+
+    Initial commit
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    ejemplo_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Comandos.txt
+        ejemplo_2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git add .
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Comandos.txt
+        deleted:    ejemplo_1.txt
+        new file:   ejemplo_2.txt
+
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git commit -m "Nuevos cambios novedosos"
+[master 3f7f369] Nuevos cambios novedosos
+ 3 files changed, 120 insertions(+), 1 deletion(-)
+ create mode 100644 Comandos.txt
+ delete mode 100644 ejemplo_1.txt
+ create mode 100644 ejemplo_2.txt
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ cat ejemplo_2.txt
+EJEMPLO 2
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ ll
+total 5
+-rw-r--r-- 1 desarrolloweb 197121 3326 Jun  9 19:19 Comandos.txt
+-rw-r--r-- 1 desarrolloweb 197121   27 Jun  9 19:32 ejemplo_2.txt
+drwxr-xr-x 1 desarrolloweb 197121    0 Jun  9 19:25 subdir1/
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ cd subdir1
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2/subdir1 (master)
+$ cd ..
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ ll
+total 5
+-rw-r--r-- 1 desarrolloweb 197121 3326 Jun  9 19:19 Comandos.txt
+-rw-r--r-- 1 desarrolloweb 197121   27 Jun  9 19:32 ejemplo_2.txt
+drwxr-xr-x 1 desarrolloweb 197121    0 Jun  9 19:34 subdir1/
+
+desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
+$ git log
+commit 3f7f36902c784a601a0e07d1b9120242adac0110 (HEAD -> master)
+Author: MORA <francisco.mora@allianz.com.mx>
+Date:   Fri Jun 9 19:30:08 2017 +0000
+
+    Nuevos cambios novedosos
+
+commit 198ff9ac2a7429089db5d341c6e4fad7a50801bb
+Author: MORA <francisco.mora@allianz.com.mx>
+Date:   Fri Jun 9 19:17:36 2017 +0000
+
+    Initial commit
 
 desarrolloweb@AZMEXCURSOS08 MINGW64 ~/learngit2 (master)
 $
